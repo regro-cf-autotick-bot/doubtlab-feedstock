@@ -1,5 +1,5 @@
 {% set name = "doubtlab" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e2065c916820ac6008883032594c14a0a660862cb012f3fac152a97f4c3c64b4
+  sha256: f745b6d9866c767af9773c3a08efafb6d0e13cbe58a3e3e8bed094a480127065
 
 build:
   number: 0
@@ -16,11 +16,12 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
+  {% set pyver = ">=3.7,<4.0" %}
   host:
     - pip
-    - python >=3.6
+    - python {{ pyver }}
   run:
-    - python >=3.6
+    - python {{ pyver }}
     - cleanlab >=1.0
     - pandas >=1.3.3    
     - scikit-learn >=1.0.0
