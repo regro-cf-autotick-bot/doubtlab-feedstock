@@ -1,5 +1,6 @@
+{% set pyver = ">=3.7,<4.0" %}
 {% set name = "doubtlab" %}
-{% set version = "0.1.5" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,7 +9,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7ea76829088e52b46e44185f5b0eaff8dd09e281219ca94a3cca64b36d31b7e9
+  sha256: a2db3901636a7001142b50eac670b652831c0b5bb03312c4b6c5a7d718aac846
 
 build:
   number: 0
