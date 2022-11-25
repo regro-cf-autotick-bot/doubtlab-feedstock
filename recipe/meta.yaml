@@ -1,5 +1,5 @@
 {% set name = "doubtlab" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 35f0468e7545579fccd8516aff544c603daea2b7f39b7607b34dbc86c058ed19
+  sha256: ab23fc36548a970fe52caea26c8c626a0d30bad78b44889e208f7dad455e7642
 
 build:
   number: 0
@@ -44,9 +44,9 @@ about:
     or noisy, labels in your dataset. The hope is that this repository 
     makes it easier for folks to quickly check their own datasets before 
     they invest too much time and compute on gridsearch.
-    
+
     PyPI: [https://pypi.org/project/doubtlab/](https://pypi.org/project/doubtlab/)
-    
+
   doc_url: https://koaning.github.io/doubtlab/
   dev_url: https://github.com/koaning/doubtlab
 
